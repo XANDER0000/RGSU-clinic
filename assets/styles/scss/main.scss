@@ -1,0 +1,169 @@
+// @import "vars.scss";
+@import "_fonts.scss";
+
+body {
+   margin: 0;
+   overflow-x: hidden;
+   font-family: "Evolventa";
+   font-weight: 400;
+   background: #fff;
+   font-size: 16px;
+   color: #0F2F50;
+
+
+   -webkit-font-smoothing: antialiased;
+
+   &.fixed {
+      overflow: hidden;
+   }
+
+}
+
+.container {
+   max-width: 1407px;
+   padding: 0 10px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.section__heading {
+   text-align: center;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 53px;
+   color: #3B72B8;
+   padding: 30px 0 80px 0;
+   text-transform: uppercase;
+
+   @media(max-width: 700px) {
+      font-size: 36px;
+   }
+
+   @media(max-width: 600px) {
+      font-size: 30px;
+   }
+}
+
+.section__subtitle {
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 53px;
+   color: #3B72B8;
+   padding: 0 0 30px 0;
+
+   @media(max-width: 700px) {
+      font-size: 36px;
+   }
+
+   @media(max-width: 600px) {
+      font-size: 30px;
+   }
+}
+
+.scroll__arrow {
+   position: sticky;
+   bottom: 100px;
+   z-index: 30;
+   left: 91%;
+   cursor: pointer;
+
+   @media(max-width: 700px) {
+      svg {
+         width: 70px;
+         height: 70px;
+      }
+   }
+}
+
+section.text {
+   padding: 50px 0;
+   font-size: 24px;
+   line-height: 32px;
+
+   text-align: right;
+
+   p {
+      max-width: 735px;
+      margin-left: auto;
+   }
+
+   .container {
+      border-top: 1px solid #0F2F50;
+   }
+}
+
+section.intro__bg {
+   width: 100%;
+   height: 320px;
+   img {
+      width: 100%;
+      height: auto;
+      max-height: 320px;
+      object-fit: cover;
+   }
+
+   @media(max-width: 1420px) {
+      height: fit-content;
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+   margin: 0;
+}
+
+h3 {
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 53px;
+   text-align: center;
+
+   @media(max-width: 900px) {
+      font-size: 35px;
+      line-height: 40px;
+   }
+
+   @media(max-width: 550px) {
+      font-size: 28px;
+   }
+
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+// BLOCKS =============================================
+// @import "buttons.scss";
+// @import "header.scss";
+// @import "intro.scss";
+// @import "navigation.scss";
+// @import "sliders.scss";
+// @import "accordion.scss";
+// @import "more.scss";
+// @import "about.scss";
+// @import "videos.scss";
+// @import "form.scss";
+// @import "footer.scss";
+// @import "communication.scss";
+// @import "popups.scss";
+// @import "errors.scss";
+// @import "rgsu-life.scss";
+// @import "department.scss";
+// @import "events.scss";
+// @import "payment.scss";
+// @import "all-faculties.scss";
+
+//THEMES ======================================================
+// @import "themes/themes.scss";
+// @import "themes/theme-text-size.scss";
+// @import "themes/theme-colors.scss";
+// @import "themes/theme-none-images.scss";
