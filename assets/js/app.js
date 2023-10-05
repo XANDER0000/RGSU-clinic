@@ -1,3 +1,4 @@
+
 // Блок кода для выпадающих списков в хэдере
 
 const tabItems = document.querySelectorAll(".header__nav-item--tab");

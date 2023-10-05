@@ -1,0 +1,13 @@
+del {
+	position: relative;
+	text-decoration: none;
+}
+del:before {
+	content: "";
+	border-bottom: 2px solid #205285;
+	position: absolute;
+	width: calc(100% + 20px);
+    left: -11px;
+	height: 63%;
+    transform: rotate(-12deg);
+}

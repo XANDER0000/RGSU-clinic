@@ -344,11 +344,14 @@
         font-size: 22px;
     }
     .header__menu { 
-        width: 100%;
+        width: 60%;
     }
 }
 
 @media(max-width: 600px) {
+    .header__menu { 
+        width: 100%;
+    }
     .header__logo-name {
         font-size: 15px;
     }
