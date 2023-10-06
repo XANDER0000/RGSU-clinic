@@ -93,3 +93,36 @@ window.addEventListener('click', (item) => {
     }
 });
 
+// Аккордеоны
+
+// Аккордеоны в блоке about
+const aboutBtns = document.querySelectorAll('.open-accordion');
+
+
+if(aboutBtns.length > 0) {
+    aboutBtns.forEach(item => {
+        item.addEventListener('click', function(e) {
+            const aboutAccordion = item.closest('.about__accordion');
+            const aboutAccordionContent = aboutAccordion.querySelector('.about__accordion-content');
+            aboutAccordionContent.classList.remove('webkit-line-clamp');
+            aboutAccordionContent.classList.toggle('visible');
+
+            if(aboutAccordionContent.classList.contains('visible')) {
+                aboutAccordionContent.style.maxHeight = aboutAccordionContent.scrollHeight + 'px';
+            } else {
+                aboutAccordionContent.style.maxHeight = '';
+            }
+            
+
+            if(!aboutAccordion.querySelector('.about__accordion-content').classList.contains('visible')) {
+                setTimeout(() => {
+                    aboutAccordion.querySelector('.about__accordion-content').classList.add('webkit-line-clamp');
+                  }, 300);
+            }
+            
+            e.preventDefault();
+            
+        })
+    })
+}
+

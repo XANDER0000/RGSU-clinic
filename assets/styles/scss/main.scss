@@ -36,6 +36,16 @@ body {
    }
 }
 
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+main {
+
+}
+
 .container {
    max-width: 1130px;
    padding: 0 10px;
@@ -44,19 +54,28 @@ body {
 }
 
 
-.section__heading {
+.section-heading {
    position: relative;
    width: 100%;
 
-   span.section__heading-title {
+   .section-heading-title {
       position: relative;
       font-size: 32px;
       color: #205285;
       padding: 0 29.5px;
       background-color: #fff;
-      
-      margin: 0 auto;
+      width: fit-content;
+      font-weight: 400;
       z-index: 1;
+
+      @media(max-width: 700px) {
+         font-size: 28px;
+      }
+
+      @media(max-width: 500px) {
+         font-size: 24px;
+         padding: 0 20.5px;
+      }
    }
 
    &:before {
@@ -72,7 +91,44 @@ body {
    }
 }
 
+.background-vectors-wrapper {
+   position: relative;
+   height: 100%;
+   width: 100%;
 
+   .background-vectors-img {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+
+      &.left {
+         left: 0;
+      }
+      &.right {
+         right: 0;
+      }
+   }
+
+   &--slider {
+      .background-vectors-img {
+         &.left {
+            left: 10%;
+            top: 40px
+         }
+
+         &.right {
+            right: 0;
+            top: -20px
+         }
+      }
+   }
+}
+
+.background-vectors-img {
+   @media(max-width: 900px) {
+      display: none;
+   }
+}
 
 
 // BLOCKS =============================================
@@ -80,6 +136,9 @@ body {
 @import "_header.scss";
 @import "_swiper.scss";
 @import "_popups.scss";
+@import "_about.scss";
+@import "_person.scss";
+@import "_popular.scss";
 // @import "intro.scss";
 // @import "navigation.scss";
 // @import "sliders.scss";
@@ -88,7 +147,7 @@ body {
 // @import "about.scss";
 // @import "videos.scss";
 // @import "form.scss";
-// @import "footer.scss";
+@import "_footer.scss";
 // @import "communication.scss";
 // @import "popups.scss";
 // @import "errors.scss";

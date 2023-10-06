@@ -1,17 +1,18 @@
 .swiper.swiper-event-fade {
     max-width: 1210px;
-    padding: 55px 50px;
+    padding: 50px 50px;
+    margin-bottom: 55px;
 
     @media(max-width: 700px) {
-        padding: 55px 20px;
+        padding: 50px 20px;
     }
 
     @media(max-width: 600px) {
-        padding: 55px 10px;
+        padding: 50px 10px;
     }
-    .swiper-wrapper {
+    // .swiper-wrapper {
         
-    }
+    // }
     .swiper__container {
         &--linear {
             display: flex;
